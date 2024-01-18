@@ -1,0 +1,25 @@
+
+Kütüphaneler: 
+ -> IdentityServer Library OAuth 2.0 - OpenID framework ile ilgili microservisimizi token daðýtmak ile görevlendirebiliriz.
+ -> Redis noSql veritabanýdýr.
+ -> RabbitMQ: mesaj kuyruk sistemidir. 
+
+Kullanýlacak db'ler
+ -> Sql 2019: iliþkisel db
+ -> PostgreSql: iliþkisel db (DBeaver)
+ -> MongoDB: datayý fiziksel'de tutar (Compass)
+ -> Redis: datayý memory'de tutar (Another Redis Desktop Manager - RedisCommander)
+
+
+ Monolithic Mimari
+ -> Tek bir solution içerisinde katmanlardan oluþan ve genellikle tek veritabaný olan projelerdir.
+ -> Küçük uygulamalarda monitoring debuglama ve bakýmý daha kolaydýr
+ -> Transaction yönetimi kolaydýr. (genelde tek db'ye baðlý olduðu için)
+ -> Tüm proje ayný programlama diliyle ya da framework'le çalýþmalýsýn
+ -> Uygulama büyüdükçe yürütülebilirliðin zorlaþmasý
+ -> Ölçeklendirme sorunu, projede bir sürü alan olsun bir alan oldukça yoðunsa dar boðaz olduysa sadece o alaný deðil tüm alanlarý scale etmek durumundayýz
+ -> Proje büyüdükçe codebase anlamasý zorlaþacaktýr.
+
+
+
+
