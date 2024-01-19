@@ -21,5 +21,65 @@ Kullanýlacak db'ler
  -> Proje büyüdükçe codebase anlamasý zorlaþacaktýr.
 
 
+ Microservice Mimari
+ -> Birbirinden baðýmsýz olarak hayatlarýný sürdürebilen geliþebilen ve birbirleriyle haberleþebilen servislerdir.
+ -> Her mikroservisin kendine ait veritabaný var.
+ -> Genellikle her servis kendine özel bir alana ilgilidir. Mesala sepet servisi sadece sepetteki iþlemlerle ilgilenir. Ekleme çýkarma indirim vs.
+ -> Codebase küçük olacaðýndan yönetimi kolay olacaktýr.
+
+ Microservis avantajlarý
+ -> Her bir mikroservis baðýmsýz bir servistir bu yüzden baðýmsýz þekilde deploy edilebilir.
+ -> Baðýmsýz bir þekilde scale edilebilir yani ihtiyaç dahilinde (dar boðaz yaþandýðýnda) geniþletilebilir. Scale-up veya scale-out yapýlabilir.
+ -> Hata izolasyonu düþüktür yani, mikroservis mimaride herhangi bir mikroservis down olduðunda uygulama ayakta kalmaya devam eder.
+
+ Microservis dezavantajlarý
+ -> Servisler arasýndaki iletiþimi yönetmek zor ve komplekslidir.
+ -> Transaction yönetiminin zorluðu
+ -> Projeyi debug etmek zorlaþýyor 
+ -> Monitoring zorlaþýyor, loglamak bunlarý bir araya getirmek monolithic'e göre daha zordur.
+
+
+ Microservis arasýndaki iletiþim nasýl gerçekleþir?
+
+ -> Ýletiþim senkron ve asenkron olarak gerçekleþebilir.
+ -> Senkronda bir servis diðer servise istek attýðýnda sonucunun dönmesini bekler.
+ -> Asenkronda bir mesaj kuyruk sistemi olur microservis diðer servisle etkileþeme girmek istediðinde kuyruða mesaj atar ve sonucunu beklemez.
+
+
+ Message ile event arasýndaki fark
+
+ -> Publisher göndermiþ olduðu mesajýn nasýl iþleneceðini biliyorsa ve geri haber edilecekse buna message diyoruz. (örnek word dosyanýnýn pdf'e çevrileceðini biliyor)
+
+ -> Publisher event'i üreten mesajýn naýsl iþleneceðinden habersiz ve geri haber gelecek mi ilgilenmeyen buna event diyoruz. (userCreatedEvent, orderCreatedEvent)(örnek kullanýcý kaydolduðunda mail göndersin)
+   içerisinde bulunan data, message'a göre daha azdýr daha küçük boyutludur.
+ 
+
+ Microservice'de data nasýl tutulmalý?
+ 
+ -> Bir microserviste diðer microservice'in datasýnýn ID'sini tutmak mantýklý deðil çünkü ID'nin detaylarýný görebilmek için diðer mikroservice ihtiyacýmýz olacak bunun yerine gerekli datayý çoklayarak kendi mikroservisinde tutmalý.
+
+ -> Bir microservis diðer microservisin db'sine doðrudan ulaþamaz onun yerine endpointlerini kullanabilir.
+
+
+ 
+ Microservisler arasýnda distributed transaction'ýný (veri bütünlülüðünü) nasýl yönetebiliriz?
+
+ -> Transaction: kelime anlamý iþlem, db anlamýnda ise insert,update,deletelerden her biri iþlemdir.
+
+ -> Birden fazla db ve bu db'lerde farklý fiziksel yerlerde bulunduðu zaman ortaya distributed transaction ortaya çýkýyor.
+
+
+ Eventual Consistency
+ 
+ -> Nihai tutarlýlýk olarak çevirebiliriz.
+ 
+ -> Bir microserviste bir data deðiþtiðinde event olarak message broker'a gönderilir subscriber olan servisler buna göre ilgili datayý günceller.
+
+ -> Herhangi T anýnda kullanýcý farklý datalar görmesi sorun teþkil etmiyorsa eventual consistency modelini kullanabiliriz. Yani bir deðiþiklik olduðunda rabbit'e gönderilir ilgili servisler deðiþikliði alýr bunu alýrken de süre geçebilir modelde bunu da problem olarak görmez.
+
+
+
+ Not: Projeyi docker ile ayaða kaldýracaðýz docker sayesinde ilgili servisimizi kolay þekilde down edebilir ya da ihtiyaç halinde replica yapabiliriz.
+
 
 
