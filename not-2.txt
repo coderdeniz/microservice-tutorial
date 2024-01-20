@@ -1,0 +1,21 @@
+
+Proje
+--
+
+-> Catalog.API 
+
+ -> Db tarafında MongoDb kullanılacak.
+	-> mongo db tercih etmemizin sebepleri 
+	   -> ilişkisel olmayan veritabanı olmasıdır.
+	   -> sütun sayısı duruma göre artabilir olması. (dinamiklik)
+
+ -> Kursların eklenip çıkartılması, fotoğrafların url'leri tutulacak.
+ 
+ -> port: http://localhost:6011
+
+ -> Category olacak onlara bağlı course'lar olacak ve course'ların feature'ları olacak. Ama ilişkisel db'deki gibi olmayacak yani category'si silinen course'lar kaldırılmaz. Yada id'si category collection'inda da olmasa dahi course collection'ina ekleyebiliriz.
+
+ -> birebir ilişkide embedded pattern, bire çok da reference pattern kullanılacak.
+ 
+ 
+

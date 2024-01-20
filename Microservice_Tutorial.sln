@@ -6,11 +6,32 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "notes", "notes", "{5CF093F3-9913-4516-B7CD-7E93204D8C4A}"
 	ProjectSection(SolutionItems) = preProject
 		not-1.txt = not-1.txt
+		not-2.txt = not-2.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{9EAC9348-1695-4F11-8879-CFD958E389CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{90C5DB9A-E2FB-4135-A466-F970EBC2772D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCourse.Services.Catalog", "Services\Catalog\FreeCourse.Services.Catalog\FreeCourse.Services.Catalog.csproj", "{1ED0BF9A-1FD8-4D85-B293-1319E95C5F78}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1ED0BF9A-1FD8-4D85-B293-1319E95C5F78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED0BF9A-1FD8-4D85-B293-1319E95C5F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ED0BF9A-1FD8-4D85-B293-1319E95C5F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED0BF9A-1FD8-4D85-B293-1319E95C5F78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{90C5DB9A-E2FB-4135-A466-F970EBC2772D} = {9EAC9348-1695-4F11-8879-CFD958E389CE}
+		{1ED0BF9A-1FD8-4D85-B293-1319E95C5F78} = {90C5DB9A-E2FB-4135-A466-F970EBC2772D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {26E6C6F4-F181-41DD-887F-69B9DA9322E9}
