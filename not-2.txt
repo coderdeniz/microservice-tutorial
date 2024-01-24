@@ -18,4 +18,13 @@ Proje
  -> birebir ilişkide embedded pattern, bire çok da reference pattern kullanılacak.
  
  
+ Portainer 
+ --
+
+ -> Container ve image'leri yönetmemizi sağlayan web arayüzüdür.
+ -> portainer.io sitesine gir. 
+    -> community edition -> docker -> docker volume create portainer_data
+
+
+
 
