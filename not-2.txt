@@ -26,5 +26,12 @@ Proje
     -> community edition -> docker -> docker volume create portainer_data
 
 
+-> IdentityServer Framework
+
+-> Üyelik sistemi için Identity API yapacaðýz.
+-> Token daðýtmaktan görevli microservice olacak.
+-> Open source yazýlmýþ servislerden yararlanacaðýz.
+-> OAuth 2.0 ve OpenID Connect protokollerine uygun.
+
 
 
