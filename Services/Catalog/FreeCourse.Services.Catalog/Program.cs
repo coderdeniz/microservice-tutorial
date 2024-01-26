@@ -27,6 +27,7 @@ namespace FreeCourse.Services.Catalog
             builder.Services.AddAutoMapper(typeof(Program));
 
             builder.Services.AddScoped<ICategoryService, CategoryService>();
+            builder.Services.AddScoped<ICourseService, CourseService>();
 
             builder.Services.AddSwaggerGen();
 

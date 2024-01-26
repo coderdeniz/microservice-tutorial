@@ -24,7 +24,7 @@ Proje
  -> Container ve image'leri yönetmemizi saðlayan web arayüzüdür.
  -> portainer.io sitesine gir. 
     -> community edition -> docker -> docker volume create portainer_data
-
+	not: --restart=always yaptýðýmýz için her docker açýlýp kapandýðýnda uygulamada açýlacak.
 
 -> IdentityServer Framework
 
@@ -32,6 +32,7 @@ Proje
 -> Token daðýtmaktan görevli microservice olacak.
 -> Open source yazýlmýþ servislerden yararlanacaðýz.
 -> OAuth 2.0 ve OpenID Connect protokollerine uygun.
+-> Map: https://localhost:5001/.well-known/openid-configuration
 
 
 
