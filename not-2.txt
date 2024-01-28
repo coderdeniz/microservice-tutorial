@@ -33,6 +33,7 @@ Proje
 -> Open source yazýlmýþ servislerden yararlanacaðýz.
 -> OAuth 2.0 ve OpenID Connect protokollerine uygun.
 -> Map: https://localhost:5001/.well-known/openid-configuration
+-> ClientCredentials'de refresh tokken yok ama ResourceOwnerPassword'de var.
 
 
 
