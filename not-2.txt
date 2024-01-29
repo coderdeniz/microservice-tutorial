@@ -36,4 +36,13 @@ Proje
 -> ClientCredentials'de refresh tokken yok ama ResourceOwnerPassword'de var.
 
 
+-> PhotoStock.API
+
+-> db olmayacak foto geldikçe klasöre kaydedecek ve diðer servislere sunacak.
+-> port: http://localhost:5012
+-> cancellationToken: foto geldiðinde kaydedene kadar endpointi çaðýran yer iþlemi sonlandýrýrsa fotoyu kaydeden yer de sonlansýn kaydetmesin. mesala kullanýcý
+fotoyu kaydederken tarayýcýyý kapatýrsa cancellectionToken devreye girer ve dosya kaydetme kapanýr. Asenkron baþlayan iþlemkleri sadece hata fýrlatarak sonlandýrabiliriz.
+Cancellationtoken de hata fýrlatýyor.
+
+
 
