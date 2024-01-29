@@ -46,3 +46,13 @@ Cancellationtoken de hata fýrlatýyor.
 
 
 
+-> Basket.API 
+
+-> Sepete ekleme silme güncelleme iþlemleri yapýlacak. 
+-> Kullanýcýlar sepete ekler sipariþ oluþturunca sepetteki data siler.
+-> Hýzlý okuma güncelleme iþlemi olmasý lazým bu yüzden noSql db tabanlarýndan mongo veya redis kullanýlabilir. Projede redis kullanýlacak.
+-> Kütüphane olarak StackExchange.Redis'den yararlanýlacak.
+-> port: http://localhost:5013
+
+
+
