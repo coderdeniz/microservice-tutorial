@@ -28,5 +28,15 @@ Tekrar
   -> patterni eventual consistency(nihai tutarlýlýk) uygulaya yönetebiliriz. Deðiþlik olduðunda db'lerde gerekli iþlemler yapýlýrken süre önemli deðilse kullanýlabilir.
 
 
+ Catalog API 
+ 
+ -> Ýçerisinde category ve course ve course'larýn özelliklerini barýndýran feature olacak. 
+ -> Bir kategorinin birden fazla course olabilir (bir e çok iliþki)
+ -> Course ile feature arasýnda bir e bir iliþki var.
+ -> Paket: MongoDb.Driver
+ -> id alanlarýna: [BsonRepresentation(BsonType.ObjectId)] attribute verilmektedir.
+ -> [BsonIgnore]: MongoDb'de gözardý et bunu kaydetme
 
+
+ 21 bitti
 
