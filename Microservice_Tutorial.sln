@@ -7,6 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "notes", "notes", "{5CF093F3
 	ProjectSection(SolutionItems) = preProject
 		not-1.txt = not-1.txt
 		not-2.txt = not-2.txt
+		not-3.txt = not-3.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{9EAC9348-1695-4F11-8879-CFD958E389CE}"
@@ -29,7 +30,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeCourse.Services.PhotoSt
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{D72890C5-B8BD-4098-9468-343D94E3764B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCourse.Services.Basket", "Services\Basket\FreeCourse.Services.Basket\FreeCourse.Services.Basket.csproj", "{44CA300A-601B-4A14-B919-6414B8D7A466}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeCourse.Services.Basket", "Services\Basket\FreeCourse.Services.Basket\FreeCourse.Services.Basket.csproj", "{44CA300A-601B-4A14-B919-6414B8D7A466}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

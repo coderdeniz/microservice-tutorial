@@ -1,0 +1,32 @@
+
+
+Tekrar
+
+-> Mesaj ile Event arasýndaki farklar
+  -> mesaj: kuyruða giden mesajda iþlenmesi için gerekli datayý taþýr, mesajo gönderen mesajýn nasýl iþleneceðini bilir.
+  -> event: event'ler bir notification sistemi saðlar, event'i fýrlatan onun nasýl ele alýnacaðýný bilmez.
+
+  -> event'te publisher broker'a gönderir ama dönüþüyle ya da ne yaptýðýyla ilgilenmez.
+  -> mesaj'da subscriber'in ne yapacaðýný bilir ve datanýn dönüþünü bekler.
+
+  -> event'ler geçmiþ ile ilgili ifade edilir, ör: UserCreatedEvent, OrderCreatedEvent gibi
+  -> message'lar ise örnek: WordToPdf
+
+
+  -> event'ler mesaj'lara göre daha düþük boyutludur.
+
+
+-> Microservice'lerde db'de data nasýl tutulmalý? 
+
+  -> Her mikroservis db'sinde görevi için tutulacak datalarda baþka microservisin db'sine baðýmlý olmamalý (foreign key durumu). Örnek: OrderId, CourseName, Course price gibi
+  -> Bir mikroservis baþka mikroservisin db'sine doðrudan eriþememelidir. Api'ler üzerinden haberleþebilmeli.
+
+
+-> Microservis'ler arasýnda distributed transaction'i nasýl yönebiliriz?
+
+  -> transaction, db'ye yapýlan crud iþlemlerinden her biridir.
+  -> patterni eventual consistency(nihai tutarlýlýk) uygulaya yönetebiliriz. Deðiþlik olduðunda db'lerde gerekli iþlemler yapýlýrken süre önemli deðilse kullanýlabilir.
+
+
+
+
