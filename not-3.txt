@@ -36,7 +36,15 @@ Tekrar
  -> Paket: MongoDb.Driver
  -> id alanlarına: [BsonRepresentation(BsonType.ObjectId)] attribute verilmektedir.
  -> [BsonIgnore]: MongoDb'de gözardı et bunu kaydetme
+ -> AutoMapper ile dto nesneleri ile entity nesneleri arası dönüştürme gerçekleştiriyoruz.
+ -> Paket: AutoMapper.Extensions.Microsoft.DependencyInjection
+ -> appsettings.json'da db için connectionString tanımla
+ -> class'ı appsettings'deki değer ile doldur. (önce getsection ile çek configure et sonra addSingleton ile sınıfı oluştur IOptions'dan value'i çek)
+ -> repository'ler yazılır.
+ -> ControllerBase için ItemGroup Framework Reference eklenmelidir.
+ -> Attribute'da (HttpGet) süslü ile parametre verilirse url'de ? yerine / olur.
+
+ bölüm 2 bitti
 
 
- 21 bitti
 
