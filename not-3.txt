@@ -56,7 +56,19 @@ Tekrar
  -> ClientId/ClientSecret'ten gelen tokeni mvc tarafa memory'de tutabilirken user bilgisi gerekenlerde cookie benzeri yapýda tutmalýdýr.
 
 
- 41. videodayým
+ PhotoStock.API
+
+ -> CancellationToken, istek atýldýktan sonra foto kaydetme iþinde yarým kalýndýysa iptal etmede iþe yarýyor.
+ -> Db olmayacak, fotolar sunucudaki klasöre kaydedilecek.
+
+
+ Basket.API
+ 
+ -> Dinamik yapýya sahip olduðu için(ekleme silme çok sýk) noSql db kullanmamýz gerekir.
+ -> Redis kullanacaðýz.
+
+
+ bölüm 6 / tekrar bitti
 
 
 
