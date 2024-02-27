@@ -44,7 +44,19 @@ Tekrar
  -> ControllerBase için ItemGroup Framework Reference eklenmelidir.
  -> Attribute'da (HttpGet) süslü ile parametre verilirse url'de ? yerine / olur.
 
- bölüm 2 bitti
+
+ Identity API
+
+ -> OpenSource kütüphane IdentityServer Framework kullanılıyor.
+ -> paketi indirmek için: dotnet new -i identityserver4.templates
+ -> template üzerinden projeyi oluşturuyoruz dotnet new is4aspid --name FreeCourse.IdentityServer
+ -> package console manager'da add-migration initial
+ -> update-database
+ -> template'den gelen hazır endpointler ile token alabiliyoruz.
+ -> ClientId/ClientSecret'ten gelen tokeni mvc tarafa memory'de tutabilirken user bilgisi gerekenlerde cookie benzeri yapıda tutmalıdır.
+
+
+ 41. videodayım
 
 
 
