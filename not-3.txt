@@ -68,7 +68,19 @@ Tekrar
  -> Redis kullanacaðýz.
 
 
- bölüm 6 / tekrar bitti
+ Discount.API
+
+ -> Dapper Orm ve PostgreSQL kullanýlacak.
+ -> Dapperin özellikleri
+    -> Hafif
+    -> Hýzlý
+    -> Kullanmasý basit
+    -> Performanslý
+    -> Any Database
+    -> Simplified API, basit ara yüz
+-> Ef Core'dan farký memory'de dapper çalýþmaz.
+
+
 
 
 
