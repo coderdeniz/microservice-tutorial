@@ -82,5 +82,16 @@ Tekrar
 
 
 
+API GATEWAY
+
+-> Bir client'tan gelen isteği ilgili mikroservise iletmekten sorumlu köprü görevi gören servistir.
+-> Bir middleware diyebiliriz.
+-> Authorization, Caching, Logging, RateLimiting, LoadBalance gibi işlemleri burda gerçekleştirebiliriz.
+-> İlgili mikroservisi gereksiz yere yormaktan kurtarır.
+-> Client her mikroservis için ip bilgisi bilmesine gerek yok api gateway üzerinden url vererek erişebilir olacak.
+-> Client gateway'e upstreamdaki linkle gelecek, gateway'de downstream ile ilgili microservise gidecek.
+-> Baseurl ise gatewayin kendi url
+
+
 
 
